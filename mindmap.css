@@ -1,0 +1,114 @@
+body {
+  margin: 0;
+  padding: 2rem;
+  background-color: #E6E8E6;
+  font-family: 'Clash Grotesk', sans-serif;
+  overflow-x: hidden;
+}
+
+.back-button {
+  position: fixed;
+  top: 1rem;
+  left: 1rem;
+  font-family: 'Clash Grotesk', sans-serif;
+  font-size: 1.5rem;
+  text-decoration: none;
+  color: black;
+  padding: 0.5rem 1rem;
+  background-color: transparent;
+  transition: background-color 0.2s ease;
+  z-index: 9999; /* add this */
+}
+
+
+.back-button:hover {
+  background-color: black;
+  color: #E6E8E6;
+}
+
+.collage {
+  position: relative;
+  width: 100vw;        /* full viewport width */
+  min-height: 100vh;
+  margin: 0 auto;
+  padding: 0;
+}
+
+
+/* Positioning each image manually */
+.collage img {
+  position: absolute;
+  width: 200px;
+  height: auto;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+/* Messy placements */
+.img1 {
+  top: 100px;
+  left: 10vw;
+  transform: rotate(-5deg);
+}
+
+.img2 {
+  top: 250px;
+  left: 70vw;
+  transform: rotate(8deg);
+}
+
+.img3 {
+  top: 400px;
+  left: 30vw;
+  transform: rotate(-10deg);
+}
+
+.img4 {
+  top: 150px;
+  left: 85vw;
+  transform: rotate(5deg);
+}
+
+.img5 {
+  top: 500px;
+  left: 15vw;
+  transform: rotate(3deg);
+}
+
+.img6 {
+  top: 650px;
+  left: 60vw;
+  transform: rotate(-7deg);
+}
+
+.img7 {
+  top: 800px;
+  left: 25vw;
+  transform: rotate(6deg);
+}
+
+.img8 {
+  top: 950px;
+  left: 75vw;
+  transform: rotate(-4deg);
+}
+
+.img9 {
+  top: 1100px;
+  left: 40vw;
+  transform: rotate(9deg);
+}
+
+.img10 {
+  top: 1250px;
+  left: 20vw;
+  transform: rotate(-6deg);
+}
+
+
+
+/* Optional: scale image on hover */
+.collage img:hover {
+  transform: scale(1.05) rotate(2deg);
+  z-index: 2;
+}
